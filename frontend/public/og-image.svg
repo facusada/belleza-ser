@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <defs>
+    <radialGradient id="aura1" cx="78%" cy="22%" r="55%">
+      <stop offset="0%" stop-color="#B7A4D4" stop-opacity="0.45"/>
+      <stop offset="100%" stop-color="#FBF6EF" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="aura2" cx="14%" cy="82%" r="55%">
+      <stop offset="0%" stop-color="#C9A24B" stop-opacity="0.30"/>
+      <stop offset="100%" stop-color="#FBF6EF" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1200" height="630" fill="#FBF6EF"/>
+  <rect width="1200" height="630" fill="url(#aura1)"/>
+  <rect width="1200" height="630" fill="url(#aura2)"/>
+  <g fill="none" stroke="#C9A24B" stroke-width="3" stroke-linecap="round" transform="translate(600 175)">
+    <circle cx="0" cy="0" r="42"/>
+    <path d="M0 -64 v16 M0 48 v16 M-64 0 h16 M48 0 h16"/>
+  </g>
+  <circle cx="600" cy="175" r="10" fill="#6B5A86"/>
+  <text x="600" y="350" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="92" fill="#403A36">Belleza Ser</text>
+  <text x="600" y="420" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="34" fill="#8A7E72">Bienestar holístico y sanación a distancia</text>
+  <text x="600" y="500" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="24" letter-spacing="3" fill="#6B5A86">REENERGIZACIÓN · BIODECODIFICACIÓN · NUMEROLOGÍA</text>
+</svg>

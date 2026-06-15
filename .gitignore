@@ -1,0 +1,30 @@
+# Env
+.env
+.env.*
+!.env.example
+
+# Node / Nuxt
+node_modules/
+frontend/.nuxt/
+frontend/.output/
+frontend/dist/
+frontend/.data/
+*.log
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+*.egg-info/
+
+# corepack (binarios locales de pnpm)
+.corepack/
+
+# OS / editor
+.DS_Store
+.idea/
+.vscode/
