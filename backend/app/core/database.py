@@ -1,5 +1,6 @@
 """Engine y sesión async de SQLAlchemy 2.0, más la Base declarativa."""
 
+import os
 from collections.abc import AsyncGenerator
 
 from sqlalchemy.ext.asyncio import (
@@ -8,6 +9,7 @@ from sqlalchemy.ext.asyncio import (
     create_async_engine,
 )
 from sqlalchemy.orm import DeclarativeBase
+from sqlalchemy.pool import NullPool
 
 from app.core.config import settings
 
@@ -16,7 +18,9 @@ class Base(DeclarativeBase):
     """Base declarativa común a todos los modelos."""
 
 
-engine = create_async_engine(settings.database_url, echo=False, future=True)
+# Serverless (Vercel) necesita NullPool: no hay proceso persistente que mantenga el pool.
+_pool_kwargs = {"poolclass": NullPool} if os.getenv("VERCEL") else {}
+engine = create_async_engine(settings.database_url, echo=False, future=True, **_pool_kwargs)
 
 AsyncSessionLocal = async_sessionmaker(
     bind=engine,
