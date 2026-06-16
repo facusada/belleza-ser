@@ -24,12 +24,12 @@ export interface Service {
 export const services: Service[] = [
   {
     slug: 'reenergizacion',
-    name: 'Sesiones de reenergización',
-    tagline: 'Recuperá tu equilibrio y vitalidad',
+    name: 'Sesiones de Reenergetización',
+    tagline: 'Alineá todos tus cuerpos desde la consciencia',
     description:
-      'Una sesión a distancia para liberar bloqueos energéticos, armonizar tus centros y reconectar con tu vitalidad. Trabajamos sobre el cansancio, el estrés y las emociones estancadas para devolverte claridad y calma.',
+      'Una técnica que alinea todos los cuerpos —mental, emocional, físico y espiritual— a través de la apertura de consciencia en cada persona. Solo la propia consciencia puede lograr cambios profundos y radicales en cada ser. La Reenergetización permite un cambio en las estructuras, patrones y mandatos que puedan estar alterando el equilibrio de los cuerpos. Esta herramienta profundiza en la sanación, limpiando todo bloqueo, registro familiar ancestral y mal karma.',
     icon: '✺',
-    whatsappMessage: '¡Hola! Me interesa una sesión de reenergización. ¿Cómo la coordinamos?'
+    whatsappMessage: '¡Hola! Me interesa una sesión de Reenergetización. ¿Cómo la coordinamos?'
   },
   {
     slug: 'biodecodificacion',
@@ -43,9 +43,9 @@ export const services: Service[] = [
   {
     slug: 'cartas-numerologicas',
     name: 'Cartas numerológicas',
-    tagline: 'Tu mapa personal a través de los números',
+    tagline: 'Personales y de pareja',
     description:
-      'Un estudio numerológico personalizado que revela tus talentos, tus desafíos y los ciclos que estás transitando. Una guía para tomar decisiones con más conciencia y alinearte con tu propósito.',
+      'En esta carta encontrarás herramientas para alinearte con tu misión de vida y entender qué te impide ser lo que realmente querés. A través de tu fecha de nacimiento y tu nombre completo, realizamos un análisis que te sirva de guía en tu vida, volviéndote un observador de vos mismo y logrando así liberar tus bloqueos. ¿Estás necesitando un cambio y no sabés por dónde empezar? La numerología te puede ayudar. Disponible en cartas personales y de pareja.',
     icon: '✷',
     whatsappMessage: '¡Hola! Me interesa una carta numerológica. ¿Cómo la coordinamos?'
   },

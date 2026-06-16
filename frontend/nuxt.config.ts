@@ -16,7 +16,7 @@ export default defineNuxtConfig({
       // Estos valores se sobreescriben con las env NUXT_PUBLIC_* en runtime.
       siteUrl: 'http://localhost:3000',
       apiBase: 'http://localhost:8000',
-      whatsappNumber: '',
+      whatsappNumber: '393511615199',
       instagramUser: 'enbellezaser'
     }
   },

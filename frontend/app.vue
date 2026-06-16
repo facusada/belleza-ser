@@ -1,5 +1,5 @@
 <template>
-  <div class="min-h-screen bg-bs-cream">
+  <div class="relative z-[1] min-h-screen">
     <AppHeader />
     <main>
       <NuxtPage />

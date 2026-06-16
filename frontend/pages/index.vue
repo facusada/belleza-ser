@@ -5,7 +5,7 @@ const siteUrl = useRuntimeConfig().public.siteUrl as string
 const ogImageUrl = `${siteUrl}${site.seo.ogImage}`
 
 // SEO + Open Graph. No seteamos `title` acá para que titleTemplate use el título
-// completo del sitio en la home (sin duplicar "| Belleza Ser").
+// completo del sitio en la home (sin duplicar "| EnbellezaSer").
 useSeoMeta({
   description: () => site.seo.description,
   ogUrl: () => siteUrl,

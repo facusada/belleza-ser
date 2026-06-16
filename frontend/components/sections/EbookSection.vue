@@ -24,6 +24,11 @@ const ebookHref = url(ebook?.whatsappMessage ?? '¡Hola! Quiero adquirir el e-bo
           <p class="mt-5 text-lg leading-relaxed text-bs-cream/85">
             {{ site.ebook.description }}
           </p>
+          <ul class="mt-8 space-y-3 text-lg leading-relaxed text-bs-cream/90">
+            <li v-for="(quote, i) in site.ebook.quotes" :key="i" class="italic">
+              “{{ quote }}”
+            </li>
+          </ul>
           <div class="mt-8 flex justify-center">
             <CtaButton :href="ebookHref" external variant="secondary">
               {{ site.ebook.ctaLabel }}

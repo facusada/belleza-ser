@@ -17,9 +17,29 @@ import { site } from '~/data/site'
 
       <RevealOnScroll>
         <p class="bs-eyebrow">{{ site.about.title }}</p>
-        <h2 class="mt-3 text-4xl text-bs-ink sm:text-5xl">Un espacio para reencontrarte</h2>
+        <h2 class="mt-3 text-4xl text-bs-ink sm:text-5xl">{{ site.about.heading }}</h2>
         <div class="mt-6 space-y-5 text-lg leading-relaxed text-bs-muted">
           <p v-for="(p, i) in site.about.paragraphs" :key="i">{{ p }}</p>
+        </div>
+      </RevealOnScroll>
+    </div>
+
+    <div class="bs-container mt-20 grid items-center gap-12 lg:grid-cols-2">
+      <RevealOnScroll class="lg:order-2 flex justify-center">
+        <div class="h-72 w-72 overflow-hidden rounded-full shadow-soft ring-4 ring-bs-clay/20 sm:h-80 sm:w-80">
+          <img
+            src="/foto-mili.jpeg"
+            alt="María Milagros"
+            class="h-full w-full object-cover object-top"
+          />
+        </div>
+      </RevealOnScroll>
+
+      <RevealOnScroll class="lg:order-1">
+        <p class="bs-eyebrow">{{ site.aboutMe.title }}</p>
+        <h2 class="mt-3 text-4xl text-bs-ink sm:text-5xl">{{ site.aboutMe.heading }}</h2>
+        <div class="mt-6 space-y-5 text-lg leading-relaxed text-bs-muted">
+          <p v-for="(p, i) in site.aboutMe.paragraphs" :key="i">{{ p }}</p>
         </div>
       </RevealOnScroll>
     </div>
