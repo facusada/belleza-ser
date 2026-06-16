@@ -8,8 +8,9 @@ const ctaHref = url('¡Hola! Me gustaría coordinar una sesión. 🌿')
 const links = [
   { label: 'Servicios', href: '#servicios' },
   { label: 'Sobre mí', href: '#sobre-mi' },
-  { label: 'E-book', href: '#ebook' },
-  { label: 'Contacto', href: '#contacto' }
+  { label: 'E-book', href: '#ebook' }
+  // Contacto/leads oculto por ahora (ver ContactSection en pages/index.vue):
+  // { label: 'Contacto', href: '#contacto' }
 ]
 </script>
 

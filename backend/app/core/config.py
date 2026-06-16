@@ -24,6 +24,9 @@ class Settings(BaseSettings):
     mercadopago_access_token: str = ""
     mercadopago_webhook_secret: str = ""
 
+    # Clave para endpoints de administración (listar leads). Vacía = admin deshabilitado.
+    admin_api_key: str = ""
+
     @field_validator("database_url", mode="before")
     @classmethod
     def _fallback_empty_db_url(cls, v: object) -> object:

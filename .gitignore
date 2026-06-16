@@ -3,6 +3,9 @@
 .env.*
 !.env.example
 
+# Claude Code (memoria local del asistente)
+memory/
+
 # Node / Nuxt
 node_modules/
 frontend/.nuxt/

@@ -27,6 +27,8 @@ useHead({
     <ServicesSection />
     <AboutSection />
     <EbookSection />
-    <ContactSection />
+    <!-- Formulario de contacto/leads: oculto por ahora. Feature lista para activar:
+         descomentar esta línea y el link "Contacto" en AppHeader.vue. -->
+    <!-- <ContactSection /> -->
   </div>
 </template>
